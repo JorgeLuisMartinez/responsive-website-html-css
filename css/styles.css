@@ -16,8 +16,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 9%;
+    padding: 33px 7%;
     background: transparent;
+}
+section{
+    padding: 0 0 0 11%;
 }
 .logo{
     font-size: 30px;
@@ -52,4 +55,63 @@ header{
     background: linear-gradient(245.59deg, #260851 0%, #2e0851 28.53%, #470962 75.52%);
     position: relative;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 6rem;
+}
+.champion-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+}
+.champion-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    line-height: 1  ;
+    color: white;
+    margin: 0 0 45px;
+}
+.champion-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.champion-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.champion-img img{
+    width: 450px;
+    height: auto;
+}
+.champion-text a{
+    display: inline-block;
+    color: white;
+    background: #2e0851;
+    border: 1px solid transparent;
+    padding: 10px 26px;
+    line-height: 1.4;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.champion-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+.champion-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.champion-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
 }
