@@ -91,7 +91,7 @@ section{
 .champion-text a{
     display: inline-block;
     color: white;
-    background: #2e0851;
+    background: rgb(158, 57, 169);
     border: 1px solid transparent;
     padding: 10px 26px;
     line-height: 1.4;
@@ -99,7 +99,7 @@ section{
     font-weight: 500;
     border-radius: 30px;
     text-transform: uppercase;
-    transition: all .55s ease;
+    transition: all .50s ease;
 }
 .champion-text a:hover{
     background: transparent;
@@ -114,4 +114,79 @@ section{
 .champion-text a.ctaa i{
     vertical-align: middle;
     margin-right: 5px;
+}
+.socialMedia{
+    position: absolute;
+    top: 50%;
+    padding: 0 5%;
+    transform: translateY(-50%);
+}
+.socialMedia i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.socialMedia i:hover{
+    color: rgb(198, 73, 212);
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 7%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    font-size: 30px;
+    color: white;
+    background: rgb(158, 57, 169);
+    border-radius: 50%;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+/* responsive styles */
+
+@media (max-width: 1200px) {
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .socialMedia{
+        padding: 0 4%;
+        transition: .2;
+    }
+    .scroll-down{
+        right: 8%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1115px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 995px){
+    .champion-img img{
+        width: 100%;
+        height: auto;
+    }
+    .champion-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .champion-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 995px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
 }
