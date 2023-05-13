@@ -147,6 +147,7 @@ section{
 }
 .scroll-down i:hover{
     transform: translateY(-5px);
+    border: 0.5px solid white;
 }
 
 /* responsive styles */
@@ -165,12 +166,7 @@ section{
         transition: .2s;
     }
 }
-@media (max-width: 1115px){
-    section{
-        padding: 0 12%;
-        transition: .2s;
-    }
-}
+
 @media (max-width: 995px){
     .champion-img img{
         width: 100%;
@@ -188,5 +184,59 @@ section{
     section{
         padding: 0 3%;
         transition: .2s;
+    }
+    .champion-text{
+        padding-top: 115px;
+    }
+    .champion-img{
+        text-align: center;
+    }
+    .champion-img img{
+        width: 350px;
+        height: auto;
+    }
+    .champion{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .socialMedia{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+@media (max-width: 895px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 50vh;
+        background: whitesmoke;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 5px 0;
+        color: rgb(158, 57, 169);
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .champion-img img{
+        width: 100%;
+        height: auto;
     }
 }
